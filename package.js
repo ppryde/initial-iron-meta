@@ -5,7 +5,8 @@ Package.describe({
   "summary": "Render your initial pages SEO data for all bots and users",
   "version": "0.0.1",
   "git": "https://github.com/ppryde/initial-iron-meta.git",
-  "name": "ppryde:fast-seo"
+  "name": "pip87:initial-iron-meta",
+  "documentation": null
 });
 
 Npm.depends({
@@ -15,7 +16,6 @@ Npm.depends({
 Package.onUse(function(api) {
   configure(api);
   api.export('InitialIronMeta', ['client', 'server']);
-  api.export('__init_fast_seo', ['client']);
 });
 
 function configure (api) {
