@@ -4,7 +4,7 @@ var path = Npm.require('path');
 Package.describe({
   "summary": "Render your initial pages SEO data for all bots and users",
   "version": "0.0.1",
-  //"git": "https://github.com/meteorhacks/fast-render",
+  "git": "https://github.com/ppryde/initial-iron-meta.git",
   "name": "ppryde:fast-seo"
 });
 
