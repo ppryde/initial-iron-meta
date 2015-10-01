@@ -44,7 +44,11 @@ Router. route('/', {
   ...
   ironMeta:true,
   meta:function() {
-    return {"og:title":"Initial meta rendering"};
+    return {
+      "og:title":"Initial meta rendering",
+      ...
+      "moreMeta":"moreValues"
+    };
   }
   ...
 }) ;
