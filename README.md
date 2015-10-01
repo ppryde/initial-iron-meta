@@ -1,5 +1,14 @@
 # Initial Iron Meta
 
+* [What does it do?](#what-does-it-do?)
+* [Why is this important?](#why-is-this-important?)
+* [Initial pages only?](#initial-pages-only?)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Under The Hood](#under-the-hood)
+* [Known Issues](#known-issues)
+* [Things To Do](#things-to-do)
+
 ### What does it do?
 
 The package is designed to provide meta data on initial page load based on options provided in the iron router configuration for both server and client side calls. It has no reliance on spiderable package or hashbangs to provide SEO data on initial html passed to client.
@@ -58,13 +67,13 @@ All credit to the Meteorhacks guys for fast-render which I pillaged for code and
 On startup Route Controllers are checked and routes/param info are linked to the middleware which captures the route being run and gets the object/array/function provided by the meta field. In the case of the function it runs the function using the path and params for the route as context. All data is converted to an object of key value pairs before being passed to the inject-initial package to be injected using inject-initial before the basic html for the page is passed to the client via the usual routing paths.
 
 ### Known Issues
-- If you are using server side rendering with routes that have the same path as their client side counterparts then currently declaring the meta field for the client route will populate both server and client side renders but you cannot (yet) populate route meta from the server side.
+- If you are using server side rendering with routes that have the same path then currently declaring the meta field for the client route will populate both server and client side renders but you cannot (yet) populate routes from the server side.
 - Currently cannot manage dynamically added routes (although Im sure a listener could be implemented somewhere)
 
 ### Things To Do
 - Bind to either client or server side routes specifically do not allow leakage
 - Allow server side route tag definitions
-- Increase support for common fields (along the lines of ms:seo)
+- Increase support for common fields (along the lines of manuelschoebel:ms-seo)
 - Enhance route filter and redirect to server side for certain routes
 
 ### Pulls
