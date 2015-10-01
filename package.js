@@ -3,7 +3,7 @@ var path = Npm.require('path');
 
 Package.describe({
   "summary": "Render your initial pages SEO data for all bots and users",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "git": "https://github.com/ppryde/initial-iron-meta.git",
   "name": "pip87:initial-iron-meta",
   "documentation": null
@@ -20,7 +20,7 @@ Package.onUse(function(api) {
 
 function configure (api) {
   api.versionsFrom('METEOR@0.9.3');
-  api.use('meteorhacks:inject-initial', ['client', 'server']);
+  api.use('meteorhacks:inject-initial@1.0.2', ['client', 'server']);
   api.use('iron:router@0.9.0 || 1.0.0', ['client', 'server'], {weak: true});
 
   api.use('meteorhacks:picker@1.0.3', 'server');
