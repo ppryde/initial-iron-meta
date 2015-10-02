@@ -3,7 +3,7 @@ var path = Npm.require('path');
 
 Package.describe({
   "summary": "Render your initial pages SEO data for all bots and users",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "git": "https://github.com/ppryde/initial-iron-meta.git",
   "name": "pip87:initial-iron-meta",
   "documentation": null
